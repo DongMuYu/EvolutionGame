@@ -322,9 +322,9 @@ class Individual(Entity):
             # 最大合理时间
             max_reasonable_time = setting.ROUND_DURATION_FRAMES
             
-            # 计算存活时间适应度：当前帧数/最大合理时间
-            # 存活得越久，得分越高（线性增长）
-            survival_fitness = max(0, current_frame / max_reasonable_time)
+            # 计算存活时间适应度：每帧增长不得低于0.2，适应度增长量为max(0.2，current_frame / max_reasonable_time)
+            # 存活得越久，得分越高（线性增长，无增长极限）
+            survival_fitness = max(0.2, current_frame / max_reasonable_time)
             
             # 更新存活时间适应度
             self.survival_time_fitness = survival_fitness

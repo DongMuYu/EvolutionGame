@@ -169,7 +169,7 @@ class Game:
 
 # 主程序入口
 if __name__ == "__main__":
-    render = False  # 设置是否渲染图形界面
+    render = True  # 设置是否渲染图形界面
     
     # 创建训练环境实例
     game = Game(render=render)

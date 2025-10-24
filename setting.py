@@ -25,7 +25,7 @@ INDIVIDUAL_RADIUS = 15  # 个体半径（圆形个体）
 INDIVIDUAL_HORIZONTAL_SPEED = 6  # 个体水平移动速度
 INDIVIDUAL_VERTICAL_SPEED = 6  # 个体垂直移动速度
 INDIVIDUAL_MAX_FLIGHT_ENERGY = 100  # 个体飞行最大能量值
-FLIGHT_ENERGY_COST_PERCENT = 0.00  # 每次飞行扣除的能量百分比
+FLIGHT_ENERGY_COST_PERCENT = 0.03  # 每次飞行扣除的能量百分比
 FLIGHT_ENERGY_RECOVERY_PERCENT = 0.10  # 每帧恢复的能量百分比
 GRAVITY_ACCELERATION = 0.8  # 重力加速度，每帧向下的加速度
 MAX_RAY_DISTANCE = 250.0  # 最大射线检测距离
@@ -35,11 +35,11 @@ GOAL_SIZE = 15  # 目标大小（半径）
 GOAL_COUNT = 5  # 目标数量
 
 # ===== 游戏帧计时参数 =====
-ROUND_DURATION_FRAMES = 200  # 每轮持续帧数
+ROUND_DURATION_FRAMES = 10000  # 每轮持续帧数
 
 # ===== 遗传算法参数 =====
 POPULATION_SIZE = 100  # 种群个体数
-SAVE_EVERY_N_GENERATIONS = 50  # 每N代保存一次数据
+SAVE_EVERY_N_GENERATIONS = 100  # 每N代保存一次数据
 
 # ===== 神经网络参数 =====
 NEURAL_NETWORK_HIDDEN1_SIZE = 128  # 第一隐藏层神经元数量

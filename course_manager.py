@@ -15,7 +15,7 @@ class CourseManager:
     
     def __init__(self):
         # 课程难度设置
-        self.current_difficulty = 1  # 当前难度级别
+        self.current_difficulty = 2  # 当前难度级别
         self.max_difficulty = 5      # 最大难度级别
         
         # 难度专用元素管理器
